@@ -79,7 +79,7 @@ const osSemaphoreAttr_t CriticalResourceSemaphore_attributes = {
 uint8_t StartFlag; // 1 means Up, 0 means Down
 volatile uint8_t RedFlag; // 1 means Up, 0 means Down
 volatile uint8_t GreenFlag; // 1 means Up, 0 means Down
-uint16_t WaitTimeMilliseconds = 1500;
+uint16_t WaitTimeMilliseconds = 550;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -369,7 +369,8 @@ void AccessSharedData(void) {
     }
 
     // Simulate read/write operations with a delay of 500 milliseconds
-    SimulateReadWriteOperation();
+//    SimulateReadWriteOperation();
+    HAL_Delay(500);
 
     // Set Start flag back to Up to indicate resource is free
     StartFlag = 1;
