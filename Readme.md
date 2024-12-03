@@ -37,3 +37,6 @@ Exercise 8 aims to demonstrate how to use a semaphore as a synchronization mecha
 
 ## Conclusion
 Using a semaphore to protect critical code sections is an efficient solution to avoid resource contention in multitasking systems. This approach can be adapted to various scenarios where shared resources are managed by multiple tasks.
+
+## Video Demo Project Exercise 8
+https://github.com/user-attachments/assets/46460c90-9664-4a37-8000-cba912f0ff24
